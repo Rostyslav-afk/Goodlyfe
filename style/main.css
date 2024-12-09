@@ -128,11 +128,12 @@ button {
   background-color: gray;
   padding-top: 113px;
   padding-bottom: 166px;
-  background: url("../img/mobile/herobgmobile@1x.webp"), url("../img/hero-linem.png");
+  background: url("../img/mobile/herobgmobile@1x.webp"), url("../img/hero-linem.png"), url();
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  background-position: center, bottom;
+  text-align: center;
+  background-position: center;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
@@ -232,9 +233,9 @@ button {
   }
 }
 .hero__svg {
-  width: 97px;
   position: absolute;
-  bottom: 0px;
-  left: center;
+  bottom: -40px;
   transform: translateX(-50%);
+  left: center;
+  width: 97px;
 }/*# sourceMappingURL=main.css.map */

@@ -1,12 +1,13 @@
 .hero {
-    padding-top: 241px;
-    padding-bottom: 9px;
-    background: rgba(45, 40, 36, 0.20), url('/img/mobile/herobgmobile@1x.webp');
-    background-position: center;
+    background-color: gray;
+    padding-top: 113px;
+    padding-bottom: 166px;
+    background: url('../img/mobile/herobgmobile@1x.webp'), url('../img/hero-linem.png');
+
     background-repeat: no-repeat;
     background-size: cover;
-    text-align: center;
     position: relative;
+    background-position: center, bottom;
 
     @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
@@ -14,50 +15,72 @@
     (min-resolution: 2dppx) {
         background-image: linear-gradient(rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)),
-            url('/img/mobile/herobgmobile@2x.webp');
+            url('../img/mobile/herobgmobile@2x.webp'), url('../img/hero-line.png');
     }
 
     @media screen and (min-width: 1174px) {
         padding-top: 200px;
         padding-bottom: 200px;
-        background-image: linear-gradient(
-            rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)
-          ),
-          url('/img/dekstop/herobgdekstop@1x.webp');
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url('../img/dekstop/herobgdekstop@1x.webp');
+
         @media (min-device-pixel-ratio: 2),
-          (-webkit-min-device-pixel-ratio: 2),
-          (min-resolution: 192dpi),
-          (min-resolution: 2dppx) {
-          background-image: linear-gradient(
-              rgba(47, 48, 58, 0.4),
-              rgba(47, 48, 58, 0.4)
-            ),
-            url('/img/dekstop/herobgdekstop@2x.webp');
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                url('../img/dekstop/herobgdekstop@2x.webp');
         }
-      }
+
+        @media screen and (min-width: 1174px) {
+            padding-top: 241px;
+            padding-bottom: 202px;
+        }
+    }
 
     &__title {
-        width: 778px;
-        height: 172px;
-        color: #fff;
-        font-family: "Poppins";
-        font-size: 70px;
-        font-weight: 700;
-        line-height: 1.1;
+        color: #FFF;
         text-align: center;
+        font-family: "Poppins";
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 1.12;
 
-        .hero__span {
+        @media screen and (min-width: 1174px) {
+            color: #FFF;
+            text-align: center;
+            font-family: "Poppins";
+            font-size: 70px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 1.1;
+        }
+    }
+
+    &__span {
+        color: #FFF;
+        font-family: "Poppins";
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 1.12;
+
+        @media screen and (min-width: 1174px) {
             color: #FFC1D8;
-            
+            font-family: "Poppins";
+            font-size: 70px;
+            font-weight: 700;
+            line-height: 1.1%;
         }
     }
 
     &__button {
-        padding-top: 14px;
-        padding-bottom: 17px;
-        padding-right: 56px;
-        padding-left: 56px;
+        padding-top: 9px;
+        padding-bottom: 10px;
+        padding-right: 41px;
+        padding-left: 42px;
+        margin-top: 9px;
         border-radius: 38.5px;
         background: #E43071;
         color: #FFF;
@@ -68,13 +91,34 @@
         font-weight: 600;
         line-height: 2.31;
         border: none;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+
+        @media screen and (min-width: 1174px) {
+            padding-top: 14px;
+            padding-bottom: 17px;
+            padding-right: 56px;
+            padding-left: 56px;
+            margin-top: 9px;
+            border-radius: 38.5px;
+            background: #E43071;
+            color: #FFF;
+            text-align: center;
+            font-family: "Open Sans";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 2.31;
+            border: none;
+        }
     }
 
     &__svg {
-       width: 291px;
-        height: 51px; 
+        width: 97px;
         position: absolute;
-        bottom: 9px;
-        left: 672px;
+        bottom: -0px;
+        left: center;
+        transform: translateX(-50%);
     }
 }
